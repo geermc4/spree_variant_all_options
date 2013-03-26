@@ -6,7 +6,7 @@ require 'spree_variant_all_options/version'
 Gem::Specification.new do |gem|
   gem.name          = "spree_variant_all_options"
   gem.version       = SpreeVariantAllOptions::VERSION
-  gem.authors       = ["geermc4"]
+  gem.authors       = ["German Garcia"]
   gem.email         = ["geermc4@gmail.com"]
   gem.summary      = "Adds button to generate all possible product combinations"
   gem.description  = "For products with multiple options, just click create all and remove a few if not needed"
