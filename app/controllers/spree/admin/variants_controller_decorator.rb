@@ -10,8 +10,9 @@ Spree::Admin::VariantsController.class_eval do
     options = SpreeVariantAllOptions::ArrayHelper.array_permutation options
 
     options.each do |ids|
+      ids=ids.flatten if ids.is_a?(Array)
       v = @product.variants.new
-      v.option_value_ids = ids.flatten
+      v.option_value_ids = ids
       v.price = @product.price
       v.weight = @product.weight
       v.height = @product.height
